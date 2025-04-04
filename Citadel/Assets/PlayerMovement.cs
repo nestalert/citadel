@@ -14,30 +14,53 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //input
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        // Reset movement at the beginning of the frame
+        movement = Vector2.zero;
 
+        // Input
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        {
+            movement.x = 1f;
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        {
+            movement.x = -1f;
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        {
+            movement.y = 1f;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
+            movement.y = -1f;
+        }
+
+        // Normalize diagonal movement to prevent faster speed
         if (movement.magnitude > 1)
         {
             movement = movement.normalized;
         }
 
-        if (movement.sqrMagnitude > 0.01f) // Only update direction when moving
+        // Update Animator parameters only when there is input
+        if (movement.sqrMagnitude > 0)
         {
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("IsMoving", 1f); // Set IsMoving to true when there's movement
         }
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        else
+        {
+            animator.SetFloat("IsMoving", 0f); // Set IsMoving to false when no movement
+        }
 
+        // You might not need a separate "Speed" float if you're using IsMoving
+        // animator.SetFloat("Speed", movement.sqrMagnitude);
     }
-
 
     void FixedUpdate()
     {
-        //movement
+        // Movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
-
-
 }

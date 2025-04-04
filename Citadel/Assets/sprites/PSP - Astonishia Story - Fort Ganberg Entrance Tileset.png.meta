@@ -1,0 +1,941 @@
+fileFormatVersion: 2
+guid: 522b23b3045abf448b6a900a92dad323
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 328
+        width: 511
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c38b40bc0e8ae74c81245891fdda2e1
+      internalID: -1207131248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 297
+        width: 62
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7def7891d6b58744b6c8bc23dc926c7
+      internalID: 1875204709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 297
+        width: 62
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45820c05a33ba6f40807353a89ee057b
+      internalID: -1410387402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 313
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7749a0611e9a4f44a8090391c416285
+      internalID: 972516386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 305
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4496b28060635b44ba967a8ae3ee3769
+      internalID: -1239335597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 224
+        width: 119
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871933e4472e7064f9d7e4c0dcd4a566
+      internalID: 889408714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 273
+        width: 78
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5459500384e8748a83417e78f79a76
+      internalID: -1120717249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 304
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e541affa0fd494ab699399de4cec1e
+      internalID: -337810518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 265
+        width: 14
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66dd253362bf9c84b83366650fa33b2e
+      internalID: 972662263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 233
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc58a35479f26414cb359882242daab6
+      internalID: -1845101158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 257
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a20336a0678264a87cfbbb541bb81e
+      internalID: -742903615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 248
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbeddd31e82052498f36401497fd819
+      internalID: 1242155356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 265
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0c008f0416a61428a6f1a958691c43
+      internalID: 550815503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 233
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132c439290557fc458c9c9169733569a
+      internalID: 667789716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 257
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f708ea2a330d01b49b48232c1c96466c
+      internalID: -1556268700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 257
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a8369563e6adb4f9410c0f28def0a0
+      internalID: -1492164881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 233
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbaed0e9cfa5bdb48aceef1080d45e66
+      internalID: -1028208259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 233
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b235141c38caf4493d553211e9e099
+      internalID: 418507412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 233
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce729bd478bd6e44b98d6cbdedb6fcb
+      internalID: 1680662788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 241
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d632ef955ae1c1547938d79f7ed74a98
+      internalID: 65303624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 168
+        width: 127
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957030f0faefbc94880c7c6429cbabae
+      internalID: -937159760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 200
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f98c128075fca84c9ba6dd316ea1ad1
+      internalID: 1043320387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cc3acc5ca97644d812c7374dc38475
+      internalID: -149864954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 200
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c3f987d3b8c7b40a719b4dff83a8c8
+      internalID: 831325097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 201
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e804165d6df90ec4f86bcd696130eab4
+      internalID: -498264651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 184
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3248d4617b926d740a83bd3ff7697213
+      internalID: 684617775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 169
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc914bc1293c55419d26ed65dd6fc1b
+      internalID: 405097275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 169
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757bc897fb2cfb443a50fccbd267eb6e
+      internalID: 458212374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 169
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70cf458b98d9a64fa779fe43a9d1d4b
+      internalID: -48715311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 185
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e8f23f6fe348545a82e6ede338d338
+      internalID: -402611059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 168
+        width: 40
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbe7ffc70f0cdf41a027b97b28ecc60
+      internalID: -2079338539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_31
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 169
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31332b5bcff17b448c8099b3bf1d322
+      internalID: 912359269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_32
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 169
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950377da32e4ef04a8c025d1a60d0806
+      internalID: 1870861694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 104
+        width: 512
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357f49dcec2592549b597b804c69838a
+      internalID: -133764440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_34
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 423
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2bf93a2c32de9c42b0d11450aa32cbf
+      internalID: 459211268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_35
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 65
+        width: 54
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12802a4256744ee49b3171d2a931cdee
+      internalID: 777458119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PSP - Astonishia Story - Fort Ganberg Entrance Tileset_36
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 33
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d51f5a8bf7e3348bc350ec513c1eb2
+      internalID: -644631812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_0: -1207131248
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_1: 1875204709
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_10: -742903615
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_11: 1242155356
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_12: 550815503
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_13: 667789716
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_14: -1556268700
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_15: -1492164881
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_16: -1028208259
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_17: 418507412
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_18: 1680662788
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_19: 65303624
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_2: -1410387402
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_20: -937159760
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_21: 1043320387
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_22: -149864954
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_23: 831325097
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_24: -498264651
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_25: 684617775
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_26: 405097275
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_27: 458212374
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_28: -48715311
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_29: -402611059
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_3: 972516386
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_30: -2079338539
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_31: 912359269
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_32: 1870861694
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_33: -133764440
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_34: 459211268
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_35: 777458119
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_36: -644631812
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_4: -1239335597
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_5: 889408714
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_6: -1120717249
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_7: -337810518
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_8: 972662263
+      PSP - Astonishia Story - Fort Ganberg Entrance Tileset_9: -1845101158
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
