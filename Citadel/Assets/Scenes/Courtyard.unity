@@ -1594,6 +1594,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6076218728319342092, guid: 8dba94b9ec26f70458bc6ae65f2a9da2, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 985256429}
+    - target: {fileID: 6076218728319342092, guid: 8dba94b9ec26f70458bc6ae65f2a9da2, type: 3}
       propertyPath: fadeImage
       value: 
       objectReference: {fileID: 1627788591}

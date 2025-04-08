@@ -13,6 +13,8 @@ public class TeleportPlayer : MonoBehaviour
     // Duration of the fade effect (in seconds)
     public float fadeDuration = 1f;
 
+    public Rigidbody2D rb;
+    
     private void Start()
     {
         // Make sure the fade image starts fully transparent
@@ -34,6 +36,7 @@ public class TeleportPlayer : MonoBehaviour
 
     private IEnumerator FadeAndTeleport(Collider2D player)
     {
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
         // Fade out
         yield return StartCoroutine(Fade(1f));
 
@@ -42,6 +45,8 @@ public class TeleportPlayer : MonoBehaviour
 
         // Fade in
         yield return StartCoroutine(Fade(0f));
+        rb.constraints = RigidbodyConstraints2D.None;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     private IEnumerator Fade(float targetAlpha)

@@ -39,4 +39,7 @@ public class PlayerMovement : MonoBehaviour
         // Movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+    public void SetSpeed(float newSpeed){
+        moveSpeed = newSpeed;
+    }
 }
