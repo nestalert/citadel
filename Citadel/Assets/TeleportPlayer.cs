@@ -1,39 +1,66 @@
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 public class TeleportPlayer : MonoBehaviour
 {
-    [Tooltip("The GameObject to which colliding objects will be teleported.")]
-    public Transform destination;
+    // The target object to teleport to
+    public GameObject targetObject;
 
-    void OnCollisionEnter(Collision collision)
+    // Reference to the Image for the fade effect
+    public Image fadeImage;
+
+    // Duration of the fade effect (in seconds)
+    public float fadeDuration = 1f;
+
+    private void Start()
     {
-        if (destination != null)
+        // Make sure the fade image starts fully transparent
+        if (fadeImage != null)
         {
-            collision.transform.position = destination.position;
-            // Optionally, you might want to adjust the rotation as well:
-            // collision.transform.rotation = destination.rotation;
-
-            Debug.Log($"Teleported {collision.gameObject.name} to {destination.name}");
-        }
-        else
-        {
-            Debug.LogError("Target Teleport Location is not assigned on " + gameObject.name);
+            fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, 0f);
         }
     }
 
-    void onTriggerEnter2D(Collider other)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (destination != null)
+        // Check if the object colliding is the player
+        if (collider.CompareTag("Player"))
         {
-            other.transform.position = destination.position;
-            // Optionally, you might want to adjust the rotation as well:
-            // other.transform.rotation = destination.rotation;
+            // Start the fade-out and teleport sequence
+            StartCoroutine(FadeAndTeleport(collider));
+        }
+    }
 
-            Debug.Log($"Teleported {other.gameObject.name} to {destination.name} (Trigger)");
-        }
-        else
+    private IEnumerator FadeAndTeleport(Collider2D player)
+    {
+        // Fade out
+        yield return StartCoroutine(Fade(1f));
+
+        // Teleport the player to the target object's position
+        player.transform.position = targetObject.transform.position;
+
+        // Fade in
+        yield return StartCoroutine(Fade(0f));
+    }
+
+    private IEnumerator Fade(float targetAlpha)
+    {
+        // Get the current alpha value of the image
+        float startAlpha = fadeImage.color.a;
+
+        // Lerp the alpha from start to target over the duration of the fade
+        float elapsedTime = 0f;
+        while (elapsedTime < fadeDuration)
         {
-            Debug.LogError("Target Teleport Location is not assigned on " + gameObject.name);
+            float alpha = Mathf.Lerp(startAlpha, targetAlpha, elapsedTime / fadeDuration);
+            fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, alpha);
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
         }
+
+        // Ensure the target alpha is set at the end (to prevent overshooting)
+        fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, targetAlpha);
     }
 }
