@@ -49,7 +49,6 @@ public class TeleportPlayer : MonoBehaviour
         // Fade out using the persistent fadeImage
         yield return StartCoroutine(Fade(1f, fadeImage));
 
-        // Unload the current scene
         // Load the new scene additively
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
         while (!loadOperation.isDone)

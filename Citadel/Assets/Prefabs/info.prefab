@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetCanvas: {fileID: 0}
-  interactionRadius: 0.3
+  interactionRadius: 0.6
   interactionButton: Z
 --- !u!114 &8092314868471680393
 MonoBehaviour:

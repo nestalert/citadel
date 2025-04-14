@@ -121,45 +121,45 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1630}
+      Script: {instanceID: 1580}
+    - Class: 114
+      Script: {instanceID: 1632}
     - Class: 114
       Script: {instanceID: 2350}
     - Class: 114
       Script: {instanceID: 2356}
     - Class: 114
-      Script: {instanceID: 2892}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 3148}
+      Script: {instanceID: 2894}
     - Class: 114
-      Script: {instanceID: 4142}
+      Script: {instanceID: 3102}
     - Class: 114
-      Script: {instanceID: 4654}
+      Script: {instanceID: 3152}
     - Class: 114
-      Script: {instanceID: 4796}
+      Script: {instanceID: 4146}
     - Class: 114
-      Script: {instanceID: 5120}
+      Script: {instanceID: 4658}
     - Class: 114
-      Script: {instanceID: 5812}
+      Script: {instanceID: 4800}
     - Class: 114
-      Script: {instanceID: 6054}
+      Script: {instanceID: 5124}
     - Class: 114
-      Script: {instanceID: 6312}
+      Script: {instanceID: 5816}
     - Class: 114
-      Script: {instanceID: 6776}
+      Script: {instanceID: 6058}
     - Class: 114
-      Script: {instanceID: 6876}
+      Script: {instanceID: 6316}
     - Class: 114
-      Script: {instanceID: 7002}
+      Script: {instanceID: 6878}
     - Class: 114
-      Script: {instanceID: 7416}
+      Script: {instanceID: 7004}
     - Class: 114
-      Script: {instanceID: 28372}
+      Script: {instanceID: 7010}
     - Class: 114
-      Script: {instanceID: 30892}
+      Script: {instanceID: 7420}
     - Class: 114
-      Script: {instanceID: 47630}
-    - Class: 114
-      Script: {instanceID: 55068}
+      Script: {instanceID: 8352}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -195,26 +195,28 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1630}
+      Script: {instanceID: 1580}
+    - Class: 114
+      Script: {instanceID: 1632}
     - Class: 114
       Script: {instanceID: 2350}
     - Class: 114
-      Script: {instanceID: 3148}
+      Script: {instanceID: 3152}
     - Class: 114
-      Script: {instanceID: 4142}
+      Script: {instanceID: 4146}
     - Class: 114
-      Script: {instanceID: 5812}
+      Script: {instanceID: 5816}
     - Class: 114
-      Script: {instanceID: 6054}
+      Script: {instanceID: 6058}
     - Class: 114
-      Script: {instanceID: 6312}
+      Script: {instanceID: 6316}
     - Class: 114
-      Script: {instanceID: 6776}
-    - Class: 114
-      Script: {instanceID: 7002}
+      Script: {instanceID: 7004}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -240,6 +242,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -387,6 +395,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PersistentCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
@@ -444,6 +458,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Tilemap.Extras
     namespaceName: UnityEngine.Tilemaps
     className: RuleOverrideTile
+  - hash:
+      serializedVersion: 2
+      Hash: 5f8acffa042564442d43017914c3ca61
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraFollow
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1028,12 +1048,6 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
-  - hash:
-      serializedVersion: 2
       Hash: 925a889a282ea89c4d9bd41afd22e4c2
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
@@ -1062,6 +1076,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PersistentCanvas
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1254,6 +1274,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PersistentPlayer
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1452,32 +1478,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PersistentPlayer
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PersistentCanvas
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PersistentCamera
-  - hash:
-      serializedVersion: 2
-      Hash: 5f8acffa042564442d43017914c3ca61
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CameraFollow
   platform: 19
   scenePathNames:
   - Assets/Scenes/Courtyard.unity
   - Assets/Scenes/KnightHall.unity
-  playerPath: C:/Users/nesta/Downloads/dump/Citadel.exe
+  playerPath: C:/Users/nesta/Downloads/temp/Citadel.exe
