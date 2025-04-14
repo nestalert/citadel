@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 576583003393195159}
   - component: {fileID: 4826277284457570508}
   - component: {fileID: 2077034641269188809}
+  - component: {fileID: 8092314868471680393}
+  - component: {fileID: 2554392018463888311}
   m_Layer: 0
   m_Name: info
   m_TagString: Untagged
@@ -120,7 +122,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.13
+  m_Radius: 30
 --- !u!114 &2077034641269188809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,3 +138,32 @@ MonoBehaviour:
   targetCanvas: {fileID: 0}
   interactionRadius: 0.3
   interactionButton: Z
+--- !u!114 &8092314868471680393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5626325496318810537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6da337136440a5458932148d3294cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomSpeed: 2
+  zoomAmount: 0.01
+  floatSpeed: 1
+  floatAmount: 0.05
+--- !u!114 &2554392018463888311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5626325496318810537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39db87cef03d0a14f822243ade629645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemRenderer: {fileID: 0}

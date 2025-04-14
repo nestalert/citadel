@@ -1,13 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AppearOnApproach
     - CameraFollow
     - InteractableObject
+    - PersistentCamera
+    - PersistentCanvas
+    - PersistentPlayer
     - PlayerMovement
     - TeleportPlayer
+    - ZoomAndFloat
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
+    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -117,33 +123,98 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1630}
     - Class: 114
-      Script: {instanceID: 2032}
+      Script: {instanceID: 2350}
     - Class: 114
-      Script: {instanceID: 2354}
+      Script: {instanceID: 2356}
     - Class: 114
-      Script: {instanceID: 2890}
+      Script: {instanceID: 2892}
     - Class: 114
-      Script: {instanceID: 3146}
+      Script: {instanceID: 3148}
     - Class: 114
-      Script: {instanceID: 4650}
+      Script: {instanceID: 4142}
     - Class: 114
-      Script: {instanceID: 4792}
+      Script: {instanceID: 4654}
     - Class: 114
-      Script: {instanceID: 5116}
+      Script: {instanceID: 4796}
     - Class: 114
-      Script: {instanceID: 5808}
+      Script: {instanceID: 5120}
     - Class: 114
-      Script: {instanceID: 6050}
+      Script: {instanceID: 5812}
     - Class: 114
-      Script: {instanceID: 6308}
+      Script: {instanceID: 6054}
     - Class: 114
-      Script: {instanceID: 6772}
+      Script: {instanceID: 6312}
     - Class: 114
-      Script: {instanceID: 6872}
+      Script: {instanceID: 6776}
     - Class: 114
-      Script: {instanceID: 6998}
+      Script: {instanceID: 6876}
     - Class: 114
-      Script: {instanceID: 7412}
+      Script: {instanceID: 7002}
+    - Class: 114
+      Script: {instanceID: 7416}
+    - Class: 114
+      Script: {instanceID: 28372}
+    - Class: 114
+      Script: {instanceID: 30892}
+    - Class: 114
+      Script: {instanceID: 47630}
+    - Class: 114
+      Script: {instanceID: 55068}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/KnightHall.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1630}
+    - Class: 114
+      Script: {instanceID: 2350}
+    - Class: 114
+      Script: {instanceID: 3148}
+    - Class: 114
+      Script: {instanceID: 4142}
+    - Class: 114
+      Script: {instanceID: 5812}
+    - Class: 114
+      Script: {instanceID: 6054}
+    - Class: 114
+      Script: {instanceID: 6312}
+    - Class: 114
+      Script: {instanceID: 6776}
+    - Class: 114
+      Script: {instanceID: 7002}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -243,16 +314,16 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
-      Hash: 3f746f393eb1a1e4a8dbac1801dbb3fa
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CameraFollow
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerEnterMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: cbc47630a350f15511c6ae46ef515457
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ZoomAndFloat
   - hash:
       serializedVersion: 2
       Hash: 63815508dfd6cf329d5c593ac8e76888
@@ -567,6 +638,12 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 7fe2286888d4b56ea9c68757ca125047
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AppearOnApproach
+  - hash:
+      serializedVersion: 2
       Hash: a9340df851e094f0e1a209d8b81aaedc
     assemblyName: Unity.2D.Tilemap.Extras
     namespaceName: UnityEngine.Tilemaps
@@ -819,7 +896,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerStayMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 9b6c5e5ee033ddb1d4b416090e38822b
+      Hash: 4d458c0a1370ffbd60c54e39d0461b70
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: TeleportPlayer
@@ -1375,7 +1452,32 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PersistentPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PersistentCanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PersistentCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 5f8acffa042564442d43017914c3ca61
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CameraFollow
   platform: 19
   scenePathNames:
   - Assets/Scenes/Courtyard.unity
-  playerPath: C:/Users/nesta/Downloads/fake/Citadel.exe
+  - Assets/Scenes/KnightHall.unity
+  playerPath: C:/Users/nesta/Downloads/dump/Citadel.exe

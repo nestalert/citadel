@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Courtyard.unity
     guid: 93a776c379cbe1043aa07951396b9939
+  - enabled: 1
+    path: Assets/Scenes/KnightHall.unity
+    guid: 97351684b0f4f4e4bb7302ff154508c6
   m_configObjects: {}

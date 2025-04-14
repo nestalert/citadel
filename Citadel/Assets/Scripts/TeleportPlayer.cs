@@ -1,56 +1,96 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class TeleportPlayer : MonoBehaviour
 {
-    // The target object to teleport to
+    // The target object to teleport to (still useful for position)
     public GameObject targetObject;
 
-    // Reference to the Image for the fade effect
-    public Image fadeImage;
+    // The name of the scene to load
+    public string sceneToLoad;
 
     // Duration of the fade effect (in seconds)
     public float fadeDuration = 1f;
 
-    public Rigidbody2D rb;
-    
-    private void Start()
-    {
-        // Make sure the fade image starts fully transparent
-        if (fadeImage != null)
-        {
-            fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, 0f);
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        // Check if the object colliding is the player
-        if (collider.CompareTag("Player"))
+        // Check if the object colliding is the persistent player
+        if (collider.CompareTag("Player") && PersistentPlayer.Instance != null && PersistentCanvas.Instance != null && PersistentCanvas.Instance.FadeImage != null && !string.IsNullOrEmpty(sceneToLoad))
         {
-            // Start the fade-out and teleport sequence
-            StartCoroutine(FadeAndTeleport(collider));
+            // Start the fade-out and scene load sequence
+            StartCoroutine(FadeAndLoadScene(PersistentPlayer.Instance.GetComponent<Collider2D>(), PersistentCanvas.Instance.FadeImage));
+        }
+        else
+        {
+            if (PersistentCanvas.Instance == null || PersistentCanvas.Instance.FadeImage == null)
+            {
+                Debug.LogError("Persistent Canvas or Fade Image not found!");
+            }
+            if (string.IsNullOrEmpty(sceneToLoad))
+            {
+                Debug.LogError("Scene to Load is not specified on " + gameObject.name + "!");
+            }
         }
     }
 
-    private IEnumerator FadeAndTeleport(Collider2D player)
+    private IEnumerator FadeAndLoadScene(Collider2D playerCollider, Image fadeImage)
     {
-        rb.constraints = RigidbodyConstraints2D.FreezeAll;
-        // Fade out
-        yield return StartCoroutine(Fade(1f));
+        // Get the Rigidbody2D from the persistent Player instance
+        Rigidbody2D persistentRb = PersistentPlayer.Instance.PlayerRigidbody;
 
-        // Teleport the player to the target object's position
-        player.transform.position = targetObject.transform.position;
+        // Freeze the persistent Rigidbody
+        if (persistentRb != null)
+        {
+            persistentRb.constraints = RigidbodyConstraints2D.FreezeAll;
+        }
 
-        // Fade in
-        yield return StartCoroutine(Fade(0f));
-        rb.constraints = RigidbodyConstraints2D.None;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        // Fade out using the persistent fadeImage
+        yield return StartCoroutine(Fade(1f, fadeImage));
+
+        // Unload the current scene
+        // Load the new scene additively
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
+        while (!loadOperation.isDone)
+        {
+            yield return null;
+        }
+
+        // Find the new player in the loaded scene (assuming it has the "Player" tag)
+        GameObject newPlayer = GameObject.FindGameObjectWithTag("Player");
+        if (newPlayer != null && targetObject != null)
+        {
+            newPlayer.transform.position = targetObject.transform.position;
+        }
+        else if (targetObject == null)
+        {
+            Debug.LogWarning("Target Object is not set. New player will be at the scene's default spawn.");
+        }
+        else
+        {
+            Debug.LogError("Could not find a Player with the 'Player' tag in the loaded scene!");
+        }
+
+        // Fade in using the persistent fadeImage
+        yield return StartCoroutine(Fade(0f, fadeImage));
+
+        // Unfreeze the persistent Rigidbody
+        if (persistentRb != null)
+        {
+            persistentRb.constraints = RigidbodyConstraints2D.None;
+            persistentRb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
     }
 
-    private IEnumerator Fade(float targetAlpha)
+    private IEnumerator Fade(float targetAlpha, Image fadeImage)
     {
+        if (fadeImage == null)
+        {
+            Debug.LogError("Fade Image is null!");
+            yield break;
+        }
+
         // Get the current alpha value of the image
         float startAlpha = fadeImage.color.a;
 
