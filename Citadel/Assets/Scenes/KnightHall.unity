@@ -303,6 +303,10 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 229715758}
+    - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 56c341d4640fc9845a9d1fe7f82a1c23, type: 3}
     - target: {fileID: 2554392018463888311, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
       propertyPath: itemRenderer
       value: 
@@ -1099,6 +1103,10 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 1407489587}
+    - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 54057418a8c335e4cbb56a72935032f8, type: 3}
     - target: {fileID: 2554392018463888311, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
       propertyPath: itemRenderer
       value: 
@@ -1183,6 +1191,10 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 1863372394}
+    - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 620db5ce33624d44e8f02a3993facf2d, type: 3}
     - target: {fileID: 2554392018463888311, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
       propertyPath: itemRenderer
       value: 
@@ -2028,6 +2040,10 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 1164452220}
+    - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 01d32468b2630874e973622ffe746e1d, type: 3}
     - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
       propertyPath: interactionRadius
       value: 0.6

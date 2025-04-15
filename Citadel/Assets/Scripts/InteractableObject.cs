@@ -5,8 +5,10 @@ public class InteractableObject : MonoBehaviour
     public Canvas targetCanvas;
     public float interactionRadius = 1f;
     public string interactionButton = "Z";
+    public AudioClip interactionSound; // Optional audio clip
 
     private Transform playerTransform;
+    private AudioSource audioSource; // To play the sound
 
     void Start()
     {
@@ -32,31 +34,57 @@ public class InteractableObject : MonoBehaviour
             Debug.LogError("Target Canvas is not assigned in the Inspector on " + gameObject.name);
             enabled = false; // Disable the script if no canvas is assigned
         }
+
+        // Setup the audio source if an audio clip is provided
+        if (interactionSound != null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.clip = interactionSound;
+            audioSource.playOnAwake = false; // Don't play until we tell it to
+        }
     }
 
     void Update()
-{
-    if (playerTransform == null || targetCanvas == null)
     {
-        return; // Exit if player or canvas isn't set
-    }
-
-    float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
-
-    if (distanceToPlayer <= interactionRadius)
-    {
-        // Player is within range
-        if (Input.GetKeyDown(KeyCode.Z)) // Directly check for the 'Z' key
+        if (playerTransform == null || targetCanvas == null)
         {
-            targetCanvas.gameObject.SetActive(true);
+            return; // Exit if player or canvas isn't set
+        }
+
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+
+        if (distanceToPlayer <= interactionRadius)
+        {
+            // Player is within range
+            if (Input.GetKeyDown(KeyCode.Z)) // Directly check for the 'Z' key
+            {
+                bool isCanvasActive = targetCanvas.gameObject.activeSelf;
+                targetCanvas.gameObject.SetActive(!isCanvasActive); // Toggle canvas visibility
+
+                // Play or stop the audio based on canvas state
+                if (interactionSound != null)
+                {
+                    if (!isCanvasActive)
+                    {
+                        audioSource.Play();
+                    }
+                    else
+                    {
+                        audioSource.Stop();
+                    }
+                }
+            }
+        }
+        else
+        {
+            // Player is out of range, hide the canvas and stop the audio
+            targetCanvas.gameObject.SetActive(false);
+            if (audioSource != null && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
         }
     }
-    else
-    {
-        // Player is out of range, hide the canvas
-        targetCanvas.gameObject.SetActive(false);
-    }
-}
 
     // Optional: For visual feedback in the editor
     private void OnDrawGizmosSelected()

@@ -1944,6 +1944,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasTalkFountain
       objectReference: {fileID: 0}
+    - target: {fileID: 8223883991401491175, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
+      propertyPath: m_text
+      value: "A\u03C5\u03C4\u03CC \u03C4\u03BF \u03C3\u03B9\u03BD\u03C4\u03C1\u03B9\u03B2\u03AC\u03BD\u03B9,
+        \u03C3\u03C4\u03C5\u03BB \u03A1\u03BF\u03BA\u03BF\u03BA\u03CC, \u03C0\u03C1\u03BF\u03C3\u03AD\u03C6\u03B5\u03C1\u03B5
+        \u03B4\u03C1\u03BF\u03C3\u03B9\u03AC \u03C3\u03C4\u03BF\u03C5\u03C2 \u03BA\u03B1\u03BB\u03BF\u03BA\u03B1\u03B9\u03C1\u03B9\u03BD\u03BF\u03CD\u03C2
+        \u03BC\u03AE\u03BD\u03B5\u03C2."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223883991401491175, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8223883991401491175, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8223883991401491175, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

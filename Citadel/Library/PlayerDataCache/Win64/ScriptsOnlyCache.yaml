@@ -197,6 +197,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 70
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -1006,7 +1008,7 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: c58704715ad9caa180c2bba197e3624d
+      Hash: 59080ced4ce7b7b56d032186ffc71abf
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: InteractableObject
