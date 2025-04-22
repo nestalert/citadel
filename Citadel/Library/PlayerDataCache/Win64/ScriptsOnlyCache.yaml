@@ -110,6 +110,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: CanvasToggler
     methodName: ToggleCanvas
+  - assembly: Assembly-CSharp
+    fullTypeName: CanvasToggler
+    methodName: ToggleCanvas
   sceneClasses:
     Assets/Scenes/Courtyard.unity:
     - Class: 1
@@ -191,9 +194,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7432}
     - Class: 114
-      Script: {instanceID: 8366}
+      Script: {instanceID: 7482}
     - Class: 114
-      Script: {instanceID: 25990}
+      Script: {instanceID: 8366}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1178,6 +1181,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: f5507247d396910ecb425c5a44d4d489
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CanvasToggler
+  - hash:
+      serializedVersion: 2
       Hash: a03cf6f60c605d858f83449f4b4fc400
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools
@@ -1530,12 +1539,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: f5507247d396910ecb425c5a44d4d489
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CanvasToggler
   platform: 19
   scenePathNames:
   - Assets/Scenes/Courtyard.unity
