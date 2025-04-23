@@ -50,11 +50,7 @@ public class TeleportPlayer : MonoBehaviour
         yield return StartCoroutine(Fade(1f, fadeImage));
         
         // Load the new scene additively
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
-        while (!loadOperation.isDone)
-        {
-            yield return null;
-        }
+        SceneManager.LoadScene(sceneToLoad);
         // Find the new player in the loaded scene (assuming it has the "Player" tag)
         GameObject newPlayer = GameObject.FindGameObjectWithTag("Player");
         if (newPlayer != null && targetObject != null)
