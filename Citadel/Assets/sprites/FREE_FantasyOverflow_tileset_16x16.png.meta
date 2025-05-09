@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -257,7 +257,7 @@ TextureImporter:
         width: 41
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,6 +265,69 @@ TextureImporter:
       bones: []
       spriteID: 80c0539310189e04a96d8ca4f866381c
       internalID: 2080112908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE_FantasyOverflow_tileset_16x16_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281
+        width: 78
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25a11bc2843f824e9f2412086d6fb4f
+      internalID: -1109005195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE_FantasyOverflow_tileset_16x16_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 326
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b501c820a0048c4abd51ad34aecdf65
+      internalID: -1530177021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE_FantasyOverflow_tileset_16x16_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 200
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7784163a850c7b7418ffc688342f3843
+      internalID: 2108956797
       vertices: []
       indices: 
       edges: []
@@ -280,6 +343,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      FREE_FantasyOverflow_tileset_16x16_0: -1109005195
+      FREE_FantasyOverflow_tileset_16x16_1: -1530177021
+      FREE_FantasyOverflow_tileset_16x16_2: 2108956797
       chairB: 991000995
       chairF: -2027081084
       chairS: -359879761
