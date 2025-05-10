@@ -1899,6 +1899,10 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 1717229339}
+    - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+      propertyPath: targetButtonName
+      value: "\u039D\u03AC\u03BD\u03BF\u03B9 (1)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2554392018463888311, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
       propertyPath: itemRenderer
       value: 
@@ -2159,6 +2163,10 @@ PrefabInstance:
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 918842763}
+    - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+      propertyPath: targetButtonName
+      value: "\u039D\u03AC\u03BD\u03BF\u03B9 (2)"
+      objectReference: {fileID: 0}
     - target: {fileID: 2554392018463888311, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
       propertyPath: itemRenderer
       value: 

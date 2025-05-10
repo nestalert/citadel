@@ -12,6 +12,8 @@ public class TextUpdater : MonoBehaviour
         if (myTextMeshPro != null)
         {
             myTextMeshPro.text = newText;
+            myTextMeshPro.fontSize = 12f;
+
         }
         else
         {
