@@ -6,6 +6,7 @@ public class InteractableObject : MonoBehaviour
     public float interactionRadius = 1f;
     public string interactionButton = "Z";
     public AudioClip interactionSound; // Optional audio clip
+    public string targetButtonName;
 
     private Transform playerTransform;
     private AudioSource audioSource; // To play the sound
@@ -58,6 +59,7 @@ public class InteractableObject : MonoBehaviour
             // Player is within range
             if (Input.GetKeyDown(KeyCode.Z)) // Directly check for the 'Z' key
             {
+                UIManager.Instance.ActivateButton(targetButtonName);
                 bool isCanvasActive = targetCanvas.gameObject.activeSelf;
                 targetCanvas.gameObject.SetActive(!isCanvasActive); // Toggle canvas visibility
 

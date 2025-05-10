@@ -1406,6 +1406,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1393962177}
     - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+      propertyPath: targetButtonName
+      value: Fountain
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
       propertyPath: interactionRadius
       value: 0.5
       objectReference: {fileID: 0}
