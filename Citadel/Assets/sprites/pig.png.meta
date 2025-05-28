@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pig_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 544
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704bac2174de9cb4a9f8cd50fdf618e7
+      internalID: 848580129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_1
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 545
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7543eef57e66b8741812eb62d40a0f81
+      internalID: -1045131340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_2
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 0
+        width: 536
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442720d48d3bd4548b0410b2a35a9d84
+      internalID: -1805325042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_3
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 0
+        width: 542
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0675f9ae099a2ef429613800862f9694
+      internalID: -87597102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_4
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 0
+        width: 550
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ad37f8cc6264848962db474afcd40c
+      internalID: 1652705731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_5
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 0
+        width: 542
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2e3d8915a984849b6c72e81d57ba68
+      internalID: 196928630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pig_6
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 0
+        width: 544
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331312b0fb151744da462a0b504455d8
+      internalID: -1251132828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pig_0: 848580129
+      pig_1: -1045131340
+      pig_2: -1805325042
+      pig_3: -87597102
+      pig_4: 1652705731
+      pig_5: 196928630
+      pig_6: -1251132828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
