@@ -59,7 +59,10 @@ public class InteractableObject : MonoBehaviour
             // Player is within range
             if (Input.GetKeyDown(KeyCode.Z)) // Directly check for the 'Z' key
             {
+                if(targetButtonName != "")
+                {
                 UIManager.Instance.ActivateButton(targetButtonName);
+                }
                 bool isCanvasActive = targetCanvas.gameObject.activeSelf;
                 targetCanvas.gameObject.SetActive(!isCanvasActive); // Toggle canvas visibility
 

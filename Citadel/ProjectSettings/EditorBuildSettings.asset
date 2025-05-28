@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DwarfEntrance.unity
     guid: f6bbc487ed7613142b3cd1dd932fa15f
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 0a592062916ee594a950bc0f24db1db3
   m_configObjects: {}
