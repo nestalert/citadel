@@ -6,7 +6,7 @@ public class Arrow : MonoBehaviour
     private bool hasFired = false;
     
     [Header("Arrow Settings")]
-    public float lifetime = 5f; // How long arrow exists before destroying
+    public float lifetime = 2f; // How long arrow exists before destroying
     
     void Awake()
     {

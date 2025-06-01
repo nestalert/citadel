@@ -90,7 +90,7 @@ public class MiniGameTrigger : MonoBehaviour
         
         // Spawn bow and target (bow at mini-game position, target above)
         currentBow = Instantiate(bowAndArrowPrefab, miniGamePosition.position, Quaternion.identity);
-        currentTarget = Instantiate(targetPrefab, miniGamePosition.position + Vector3.up * 3f, Quaternion.identity);
+        currentTarget = Instantiate(targetPrefab, miniGamePosition.position + Vector3.up * 5f, Quaternion.identity);
         
         // Get bow controller
         bowController = currentBow.GetComponent<BowController>();
