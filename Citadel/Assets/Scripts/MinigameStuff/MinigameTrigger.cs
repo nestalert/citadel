@@ -84,8 +84,7 @@ public class MiniGameTrigger : MonoBehaviour
         Rigidbody2D playerRigidbody = PersistentPlayer.Instance.PlayerRigidbody;
         if (playerRigidbody != null)
         {
-            playerRigidbody.bodyType = RigidbodyType2D.Kinematic;
-            playerRigidbody.velocity = Vector2.zero;
+            playerRigidbody.constraints = RigidbodyConstraints2D.FreezeAll;
         }
         
         // Spawn bow and target (bow at mini-game position, target above)
@@ -115,7 +114,8 @@ public class MiniGameTrigger : MonoBehaviour
         Rigidbody2D playerRigidbody = PersistentPlayer.Instance.PlayerRigidbody;
         if (playerRigidbody != null)
         {
-            playerRigidbody.bodyType = RigidbodyType2D.Dynamic;
+            playerRigidbody.constraints = RigidbodyConstraints2D.None;
+            playerRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         
         // Clean up mini-game objects

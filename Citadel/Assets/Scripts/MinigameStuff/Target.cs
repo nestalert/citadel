@@ -35,10 +35,7 @@ public class Target : MonoBehaviour
     
     public void OnHit()
     {
-        // Add to score
-        totalScore += pointValue;
-        
-        Debug.Log($"Target hit! Points: {pointValue}, Total Score: {totalScore}");
+        CurrencyManager.Instance.AddMoney(1);
         
         // Visual feedback
         StartCoroutine(FlashTarget());
@@ -55,8 +52,6 @@ public class Target : MonoBehaviour
             Instantiate(hitEffect, transform.position, Quaternion.identity);
         }
         
-        // Optional: You can choose to destroy target or keep it for multiple hits
-        // Destroy(gameObject, 0.1f); // Uncomment to destroy target after hit
     }
     
     System.Collections.IEnumerator FlashTarget()
@@ -66,14 +61,6 @@ public class Target : MonoBehaviour
             spriteRenderer.color = hitColor;
             yield return new WaitForSeconds(flashDuration);
             spriteRenderer.color = originalColor;
-        }
-    }
-    
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Arrow"))
-        {
-            OnHit();
         }
     }
     

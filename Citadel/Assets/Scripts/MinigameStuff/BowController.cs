@@ -69,7 +69,7 @@ public class BowController : MonoBehaviour
             // Fire the arrow
             arrowScript.Fire(Vector2.up, arrowSpeed);
             
-            Debug.Log("Arrow fired!");
+            // Debug.Log("Arrow fired!");
         }
     }
 }

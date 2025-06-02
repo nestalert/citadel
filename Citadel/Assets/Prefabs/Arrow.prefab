@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6096899427633952050}
   - component: {fileID: 5137470597360223021}
   - component: {fileID: 5615610942766846185}
-  - component: {fileID: 4419215639270337025}
+  - component: {fileID: 4328416996406626340}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Arrow
@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8725494997776201144}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 79.986, y: 14.577, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5137470597360223021
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -113,8 +113,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &4419215639270337025
-EdgeCollider2D:
+--- !u!61 &4328416996406626340
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -145,16 +145,16 @@ EdgeCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.034380585, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 1.6}
+    newSize: {x: 1.6, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.43134052, y: 1.6}
   m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.7360672, y: 0.33054608}
-  - {x: -0.41660598, y: -0.7750016}
-  - {x: -0.6924427, y: -0.4984758}
-  - {x: 0.41520685, y: 0.6263186}
-  - {x: 0.6967053, y: 0.6222057}
-  - {x: 0.72709, y: 0.31595773}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
