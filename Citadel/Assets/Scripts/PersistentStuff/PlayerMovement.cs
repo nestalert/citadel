@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float sprintSpeedMultiplier = 1.5f; // Adjust this value to change how much faster sprinting is
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -31,15 +32,24 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        
     }
 
     void FixedUpdate()
     {
+        float currentMoveSpeed = moveSpeed;
+
+        // Check if Shift is held down to apply sprint speed
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            currentMoveSpeed *= sprintSpeedMultiplier;
+        }
+
         // Movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);
     }
-    public void SetSpeed(float newSpeed){
+
+    public void SetSpeed(float newSpeed)
+    {
         moveSpeed = newSpeed;
     }
 }
