@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9bc5d87309a62a042a9d76588b74360c
+guid: 464a0345075ca464eb591a30d7b0c8a5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 40
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knightAttack_0
+      name: dummy_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47f96bf86e5b0a14fad24913a2a9ec71
-      internalID: -407389797
+      spriteID: ea391446ed99d344ead02048762a5dae
+      internalID: 70105449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightAttack_1
+      name: dummy_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 200
         y: 0
-        width: 64
-        height: 64
+        width: 200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29360e190dff8ad42833eb8ca39b5202
-      internalID: 1375773706
+      spriteID: 3026926b8c8a08048b90a1d49b631b7a
+      internalID: 1942790630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightAttack_2
+      name: dummy_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 400
         y: 0
-        width: 64
-        height: 64
+        width: 200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 125c5ad88572a3e40bf213e8df7fe14b
-      internalID: -1214536272
+      spriteID: 3e8d1e46cd87a2b4c9494f4e851a990f
+      internalID: 1286414079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightAttack_3
+      name: dummy_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 600
         y: 0
-        width: 64
-        height: 64
+        width: 200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 539381dc93d776d4da9f8e557565dc04
-      internalID: -720000298
+      spriteID: 5dab578df9b72d84ea288ad3c5bcbc82
+      internalID: 310971812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightAttack_4
+      name: dummy_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 800
         y: 0
-        width: 64
-        height: 64
+        width: 200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d56a5291eccbb4b86d1e6a1ea53f80
-      internalID: -368639098
+      spriteID: 8d1198423cbd65d43ad71d1f55210d23
+      internalID: -1206828679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightAttack_5
+      name: dummy_5
       rect:
         serializedVersion: 2
-        x: 320
+        x: 1000
         y: 0
-        width: 64
-        height: 64
+        width: 200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cff7a5f230440604099e99a380d99916
-      internalID: 1874618367
+      spriteID: 4633dc30637051b4aa9807f35810eaf1
+      internalID: 925537621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightAttack_6
+      name: dummy_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 1200
         y: 0
-        width: 64
-        height: 64
+        width: 200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c087666ba3e461b4b860ffa03f492993
-      internalID: -848998702
+      spriteID: 9c9c2ad8617a64e4397c7d569fd1ffa3
+      internalID: 464552893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knightAttack_7
+      name: dummy_7
       rect:
         serializedVersion: 2
-        x: 448
+        x: 1400
         y: 0
-        width: 64
-        height: 64
+        width: 200
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4de3bcf08523c2745a5fed117277afea
-      internalID: -369570286
+      spriteID: 24ea0413f174f0b4f9df596628f49b7e
+      internalID: -223727740
       vertices: []
       indices: 
       edges: []
@@ -288,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      knightAttack_0: -407389797
-      knightAttack_1: 1375773706
-      knightAttack_2: -1214536272
-      knightAttack_3: -720000298
-      knightAttack_4: -368639098
-      knightAttack_5: 1874618367
-      knightAttack_6: -848998702
-      knightAttack_7: -369570286
+      dummy_0: 70105449
+      dummy_1: 1942790630
+      dummy_2: 1286414079
+      dummy_3: 310971812
+      dummy_4: -1206828679
+      dummy_5: 925537621
+      dummy_6: 464552893
+      dummy_7: -223727740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
