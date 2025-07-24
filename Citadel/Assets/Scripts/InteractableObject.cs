@@ -4,7 +4,7 @@ public class InteractableObject : MonoBehaviour
 {
     public Canvas targetCanvas;
     public float interactionRadius = 1f;
-    public string interactionButton = "Z";
+    public bool useButton = true; // Determines if a button press is required
     public AudioClip interactionSound; // Optional audio clip
     public string targetButtonName;
 
@@ -54,44 +54,61 @@ public class InteractableObject : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
-        if (distanceToPlayer <= interactionRadius)
+        if (distanceToPlayer <= interactionRadius) // Player is within range
         {
-            // Player is within range
-            if (Input.GetKeyDown(KeyCode.Z)) // Directly check for the 'Z' key
+            if (useButton)
             {
-                if(targetButtonName != "")
+                // If useButton is true, we still require a button press
+                if (Input.GetKeyDown(KeyCode.Z))
                 {
-                UIManager.Instance.ActivateButton(targetButtonName);
+                    ActivateInteraction();
                 }
-                bool isCanvasActive = targetCanvas.gameObject.activeSelf;
-                targetCanvas.gameObject.SetActive(!isCanvasActive); // Toggle canvas visibility
-
-                // Play or stop the audio based on canvas state
-                if (interactionSound != null)
+            }
+            else
+            {
+                if (!targetCanvas.gameObject.activeSelf)
                 {
-                    if (!isCanvasActive)
-                    {
-                        audioSource.Play();
-                    }
-                    else
-                    {
-                        audioSource.Stop();
-                    }
+                    ActivateInteraction();
                 }
             }
         }
         else
         {
             // Player is out of range, hide the canvas and stop the audio
-            targetCanvas.gameObject.SetActive(false);
-            if (audioSource != null && audioSource.isPlaying)
+            if (targetCanvas.gameObject.activeSelf) // Only deactivate if currently active
+            {
+                targetCanvas.gameObject.SetActive(false);
+                if (audioSource != null && audioSource.isPlaying)
+                {
+                    audioSource.Stop();
+                }
+            }
+        }
+    }
+
+    private void ActivateInteraction()
+    {
+        if (targetButtonName != "")
+        {
+            UIManager.Instance.ActivateButton(targetButtonName);
+        }
+
+        bool isCanvasActive = targetCanvas.gameObject.activeSelf;
+        targetCanvas.gameObject.SetActive(!isCanvasActive); // Toggle canvas visibility
+
+        // Play or stop the audio based on canvas state
+        if (interactionSound != null)
+        {
+            if (!isCanvasActive)
+            {
+                audioSource.Play();
+            }
+            else
             {
                 audioSource.Stop();
             }
         }
     }
-
-    // Optional: For visual feedback in the editor
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

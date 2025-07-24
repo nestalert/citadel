@@ -2129,6 +2129,7 @@ GameObject:
   - component: {fileID: 613338597}
   - component: {fileID: 613338596}
   - component: {fileID: 613338599}
+  - component: {fileID: 613338600}
   m_Layer: 0
   m_Name: MinigameTrigger
   m_TagString: Untagged
@@ -2245,6 +2246,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &613338600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613338595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b2a8264486d954091083011482ba77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCanvas: {fileID: 1617385044}
+  interactionRadius: 3
+  useButton: 0
+  interactionSound: {fileID: 0}
+  targetButtonName: 
 --- !u!1 &638733818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,9 +2446,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1732775310774378561, guid: 416faaa3135fc9541b60c92eceef02b4, type: 3}
+      propertyPath: useButton
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732775310774378561, guid: 416faaa3135fc9541b60c92eceef02b4, type: 3}
       propertyPath: targetCanvas
       value: 
       objectReference: {fileID: 1444617245}
+    - target: {fileID: 1732775310774378561, guid: 416faaa3135fc9541b60c92eceef02b4, type: 3}
+      propertyPath: interactionRadius
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9098164521126997558, guid: 416faaa3135fc9541b60c92eceef02b4, type: 3}
       propertyPath: m_Name
       value: SignToYard
@@ -4901,11 +4927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1456411208066836024, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -740
+      value: -737.46
       objectReference: {fileID: 0}
     - target: {fileID: 1456411208066836024, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -231
+      value: -233.31
       objectReference: {fileID: 0}
     - target: {fileID: 1456411208066836024, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8588,6 +8614,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!223 &1617385044 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2754129966734869304, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
+  m_PrefabInstance: {fileID: 1617385038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1624922312 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1456411208066836024, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
