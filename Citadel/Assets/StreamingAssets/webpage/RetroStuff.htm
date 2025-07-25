@@ -1,0 +1,131 @@
+<html><script>
+    window[Symbol.for('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}')] = new (class{constructor(e,t){this.name=e,this.destination=t,this.serverListeners={},this.bgRequestsListeners={},this.bgEventsListeners={},window.addEventListener("message",(e=>{const t=e.data,s=!(t.destination&&t.destination===this.name),n=!t.event;if(!s&&!n)if("MARIO_POST_SERVER__BG_RESPONSE"===t.event){const e=t.args;if(this.hasBgRequestListener(e.requestId)){try{this.bgRequestsListeners[e.requestId](e.response)}catch(e){}delete this.bgRequestsListeners[e.requestId]}}else if("MARIO_POST_SERVER__BG_EVENT"===t.event){const e=t.args;if(this.hasBgEventListener(e.event))try{this.bgEventsListeners[t.id](e.payload)}catch(e){}}else if(this.hasServerListener(t.event))try{this.serverListeners[t.event](t.args)}catch(e){}}))}emitToServer(e,t){const s=this.generateUIID(),n={args:t,destination:this.destination,event:e,id:s};return window.postMessage(n,location.origin),s}emitToBg(e,t){const s=this.generateUIID(),n={bgEventName:e,requestId:s,args:t};return this.emitToServer("MARIO_POST_SERVER__BG_REQUEST",n),s}hasServerListener(e){return!!this.serverListeners[e]}hasBgRequestListener(e){return!!this.bgRequestsListeners[e]}hasBgEventListener(e){return!!this.bgEventsListeners[e]}fromServerEvent(e,t){this.serverListeners[e]=t}fromBgEvent(e,t){this.bgEventsListeners[e]=t}fromBgResponse(e,t){this.bgRequestsListeners[e]=t}generateUIID(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,(function(e){const t=16*Math.random()|0;return("x"===e?t:3&t|8).toString(16)}))}})('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}', 'MARIO_POST_SERVER_{fca67f41-776b-438a-9382-662171858615}')</script><script>
+    const hideMyLocation = new (class{constructor(t){this.clientKey=t,this.watchIDs={},this.client=window[Symbol.for(t)];const e=navigator.geolocation.getCurrentPosition,o=navigator.geolocation.watchPosition,n=navigator.geolocation.clearWatch,i=this;navigator.geolocation.getCurrentPosition=function(t,o,n){i.handle(e,"GET",t,o,n)},navigator.geolocation.watchPosition=function(t,e,n){return i.handle(o,"WATCH",t,e,n)},navigator.geolocation.clearWatch=function(t){if(-1===t)return;const e=i.watchIDs[t];return delete i.watchIDs[t],n.apply(this,[e])}}handle(t,e,o,n,i){const a=this.client.emitToBg("HIDE_MY_LOCATION__GET_LOCATION");let r=this.getRandomInt(0,1e5);if(this.client.fromBgResponse(a,(a=>{if(a.enabled)if("SUCCESS"===a.status){const t=this.map(a);o(t)}else{const t=this.errorObj();n(t),r=-1}else{const a=[o,n,i],c=t.apply(navigator.geolocation,a);"WATCH"===e&&(this.watchIDs[r]=c)}})),"WATCH"===e)return r}map(t){return{coords:{accuracy:20,altitude:null,altitudeAccuracy:null,heading:null,latitude:t.latitude,longitude:t.longitude,speed:null},timestamp:Date.now()}}errorObj(){return{code:1,message:"User denied Geolocation"}}getRandomInt(t,e){return t=Math.ceil(t),e=Math.floor(e),Math.floor(Math.random()*(e-t+1))+t}})('MARIO_POST_CLIENT_{fca67f41-776b-438a-9382-662171858615}')
+  </script><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><script type="text/javascript" src="RetroStuff_files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="RetroStuff_files/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="RetroStuff_files/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.top.monad.net:80/~schmutz/RetroStuff.html","20000117045603","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "948084963");
+</script>
+<link rel="stylesheet" type="text/css" href="RetroStuff_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="RetroStuff_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+  <meta name="GENERATOR" content="Adobe PageMill 3.0 Mac">
+  <title>RetroStuff</title>
+<script ecommerce-type="extend-native-history-api">(()=>{const e=history.pushState,t=history.replaceState,a=history.back,r=history.forward;function n(){window.postMessage({_custom_type_:"CUSTOM_ON_URL_CHANGED"})}history.pushState=function(){e.apply(history,arguments),n()},history.replaceState=function(){t.apply(history,arguments),n()},history.back=function(){a.apply(history,arguments),n()},history.forward=function(){r.apply(history,arguments),n()}})()</script></head>
+<body background="RetroStuff_files/Stars.jpg" link="#ff3300" alink="#ff3300" vlink="#ff3300" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6IntmY2E2N2Y0MS03NzZiLTQzOGEtOTM4Mi02NjIxNzE4NTg2MTV9IiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjEuOS4xNSIsInNjb3JlIjoxMDkxNX1d" bis_skin_checked="1">
+
+<p></p><center><b><font face="Geneva"><a href="https://web.archive.org/web/20000117045603if_/http://www.top.monad.net:80/~schmutz/retro.html" bis_skin_checked="1">Return
+to Strange Attractors Home Page</a></font></b></center><p></p>
+
+<p></p><center><b><font color="#f2ff7d">Check or Money Order TO:</font></b></center><p></p>
+
+<p></p><center><b><font color="#ffff00" size="+3" face="Georgia">RetroGrafix</font></b></center><p></p>
+
+<p></p><center><b><font color="#ffff00" size="+3" face="Georgia">472
+Main St.</font></b></center><p></p>
+
+<p></p><center><b><font color="#ffff00" size="+3" face="Georgia">Marlborough,
+NH 03455</font></b></center><p></p>
+
+<p></p><center><b><font color="#ffffcc" face="Geneva">Shipping costs
+are included in the prices</font></b></center><p></p>
+
+<p></p><center><a href="#anchor393462" bis_skin_checked="1"><b><font size="+1" face="Geneva">Back
+Issues</font></b></a><b><font color="#ffff00" size="+1" face="Geneva">&nbsp;&nbsp;&nbsp;</font><font size="+1" face="Geneva"><a href="#anchor395379" bis_skin_checked="1">T-Shirts</a></font><font color="#ffff00" size="+1" face="Geneva">&nbsp;&nbsp;&nbsp;</font><font size="+1" face="Geneva"><a href="#anchor396972" bis_skin_checked="1">Poison Elves
+Jam Poster</a></font><font color="#ffff00" size="+1" face="Geneva">&nbsp;&nbsp;&nbsp;</font><font size="+1" face="Geneva"><a href="#anchor398922" bis_skin_checked="1">MousePads</a></font><font color="#ffff00" size="+1" face="Geneva">&nbsp;&nbsp;&nbsp;</font><font size="+1" face="Geneva"><a href="#anchor400482" bis_skin_checked="1">Original Art</a></font></b></center><p></p>
+
+<p></p><center><b><font color="#ffff00" size="+1" face="Geneva"><img src="RetroStuff_files/ImageSACover15.jpg" width="164" height="250" align="BOTTOM" border="0" naturalsizeflag="3"></font></b></center><p></p>
+
+<p></p><center><b><font color="#ffff00" size="+1" face="Geneva"><hr></font></b><a name="anchor393462"></a><b><font color="#ff3300" size="+3">&nbsp;STRANGE
+ATTRACTORS BACK ISSUES</font></b></center><p></p>
+
+<p></p><center><font color="#cc0000" size="+2">#1</font><font color="#ffff00" size="+2"> (1st print) $10.00</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">#1</font><font color="#ffff00" size="+2"> (2nd print) $3.00</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">#2-4</font><font color="#ffff00" size="+2"> (1st print) $5.00@</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">#2-4</font><font color="#ffff00" size="+2"> (2nd print) $3.00@</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">#5 </font><font color="#ffff00" size="+2">(1st print) $4.00</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">#6</font><font color="#ffff00" size="+2"> (1st print) unavailable</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">#7-15</font><font color="#ffff00" size="+2"> (1st print) $2.00@</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">Retropack (#1-4)</font><font color="#ffff00" size="+2"> $8.00</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">Rocketpack(#8-15)</font><font color="#ffff00" size="+2"> $15.00</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">MoonFever (Caliber)#1,2</font><font color="#ffff00" size="+2"> $3.00@&nbsp;</font></center><p></p>
+
+<p></p><center><font color="#ff3300" size="+2">Chaos Jitterbug</font><font color="#ffff00" size="+2"> $15.00 This volume reprints issues#1-7.
+200 pgs.</font></center><p></p>
+
+<p></p><center><img src="RetroStuff_files/SAChaosJitterbug.jpg" width="127" height="198" align="MIDDLE" border="0" naturalsizeflag="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://web.archive.org/web/20000117045603if_/http://www.top.monad.net:80/~schmutz/ChaosJitterbug.html" bis_skin_checked="1">click here to read Norman Spinrad's
+introduction</a></center><p></p>
+
+<p></p><center><a name="anchor395379"></a></center><p></p>
+
+<p></p><center><b><font color="#ffff00" face="Chicago">100% cotton
+t-shirts S,L,XL,XXL $15.00</font><font color="#ffcc00" size="+2" face="Chicago">&nbsp;&nbsp;</font></b><img src="RetroStuff_files/SATShirt.jpg" width="171" height="173" align="MIDDLE" border="0" naturalsizeflag="3"></center><p></p>
+
+<p></p><center><a name="anchor396972"></a></center><p></p>
+
+<p><img src="RetroStuff_files/SAPoster.jpg" width="120" height="195" align="MIDDLE" border="0" naturalsizeflag="3"><b><font color="#ffff00" face="Chicago">Poison
+Elf Jam Poster &nbsp;11"X 17" Run of 1000. Signed</font></b><font color="#ffff00"> </font><b><font color="#ffff00" face="Chicago">and
+numbered $15.00</font></b></p>
+
+<p>&nbsp;</p>
+
+<p></p><center><a name="anchor398922"></a></center><p></p>
+
+<p></p><center><b><font color="#ffff00" size="+1" face="Chicago">Mousepads
+$10.00</font><font color="#ffcc00" size="+2" face="Chicago">&nbsp;&nbsp;</font></b><img src="RetroStuff_files/MousePad.jpg" width="221" height="180" align="MIDDLE" border="0" naturalsizeflag="3"></center><p></p>
+
+<p></p><center>&nbsp;</center><p></p>
+
+<p></p><center><a name="anchor400482"></a><img src="RetroStuff_files/SA11p8.gif" width="220" height="320" align="MIDDLE" border="0" naturalsizeflag="3">&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#ffff00">STRANGE ATTRACTORS</font></b><font color="#ffff00">
+&nbsp;<b>ORIGINAL ART</b></font></center><p></p>
+
+<p></p><center><b><font color="#ffff00" size="+1" face="Palatino">You
+can e-mail me at: Schmutz@monad.net if you wish to know the availablity
+of any page. I have some original Strange Attractors covers for
+sale also. Prices will vary.</font></b></center><p></p>
+
+<p></p><center>&nbsp;</center><p></p>
+
+<p></p><center><font color="#ffff00" size="+3">All pages are </font><font color="#ffff00" size="+2">10" </font><font color="#ffff00" size="+1">X</font><font color="#ffff00" size="+2"> 15"</font><font color="#ffff00"> </font><font color="#ffff00" size="+2">$30.00</font><font color="#ffff00" size="+3"> </font><font color="#ffff00" size="+2">for
+1&nbsp;&nbsp;</font><font color="#ffff00"> </font><font color="#ffff00" size="+2">$50.00</font><font color="#ffff00" size="+3"> </font><font color="#ffff00" size="+2">for 2</font><font color="#ffff00">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#ffff00" size="+2">$75.00</font><font color="#ffff00" size="+3"> </font><font color="#ffff00" size="+2">for 3</font></center>
+
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 04:56:03 Jan 17, 2000 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:07:50 Jul 25, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.84
+  exclusion.robots: 0.046
+  exclusion.robots.policy: 0.03
+  esindex: 0.014
+  cdx.remote: 53.332
+  LoadShardBlock: 307.834 (3)
+  PetaboxLoader3.datanode: 150.245 (4)
+  PetaboxLoader3.resolve: 131.301 (2)
+  load_resource: 127.479
+-->

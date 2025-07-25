@@ -1390,7 +1390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50.37875, y: -162.75526}
+  m_AnchoredPosition: {x: 50.37875, y: -184.45596}
   m_SizeDelta: {x: 100.7575, y: 21.7007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &279444965
@@ -1520,6 +1520,7 @@ GameObject:
   - component: {fileID: 280755553}
   - component: {fileID: 280755552}
   - component: {fileID: 280755555}
+  - component: {fileID: 280755556}
   m_Layer: 6
   m_Name: Info
   m_TagString: Untagged
@@ -1590,9 +1591,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1974456499}
-        m_TargetAssemblyTypeName: CanvasToggler, Assembly-CSharp
-        m_MethodName: ToggleCanvas
+      - m_Target: {fileID: 280755556}
+        m_TargetAssemblyTypeName: GetHelp, Assembly-CSharp
+        m_MethodName: OpenWebsite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1654,6 +1655,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetButton: {fileID: 280755552}
   activationKey: 105
+--- !u!114 &280755556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280755550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ba19a6da3bfc54a8a783856e924295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &338660588 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8223883991401491175, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
@@ -7975,7 +7988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1407661490
 RectTransform:
   m_ObjectHideFlags: 0
