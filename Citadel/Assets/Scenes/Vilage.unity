@@ -765,7 +765,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 405161330488152829, guid: 8dba94b9ec26f70458bc6ae65f2a9da2, type: 3}
       propertyPath: m_Name
-      value: doorToCourtyard
+      value: doorToDwarf
       objectReference: {fileID: 0}
     - target: {fileID: 2536426370217906450, guid: 8dba94b9ec26f70458bc6ae65f2a9da2, type: 3}
       propertyPath: m_Size.y
@@ -830,6 +830,10 @@ PrefabInstance:
     - target: {fileID: 3893137322718306435, guid: 8dba94b9ec26f70458bc6ae65f2a9da2, type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076218728319342092, guid: 8dba94b9ec26f70458bc6ae65f2a9da2, type: 3}
+      propertyPath: sceneToLoad
+      value: DwarfEntrance
       objectReference: {fileID: 0}
     - target: {fileID: 6076218728319342092, guid: 8dba94b9ec26f70458bc6ae65f2a9da2, type: 3}
       propertyPath: targetObject
@@ -2093,11 +2097,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3714707254686794345, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
       propertyPath: m_Name
-      value: CanvasTalk
+      value: CanvasTalkSign
       objectReference: {fileID: 0}
     - target: {fileID: 8223883991401491175, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
       propertyPath: m_text
-      value: "<---   \u03A0\u03C1\u03BF\u03C2 \u03C4\u03B7\u03BD \u03B1\u03C5\u03BB\u03AE"
+      value: "<---   \u03A0\u03C1\u03BF\u03C2 \u03C4\u03BF\u03BD \u03BA\u03AE\u03C0\u03BF"
       objectReference: {fileID: 0}
     - target: {fileID: 8223883991401491175, guid: 314dab8d89a56cc4ea408f5aea01b199, type: 3}
       propertyPath: m_fontSize
@@ -2130,6 +2134,7 @@ GameObject:
   - component: {fileID: 613338596}
   - component: {fileID: 613338599}
   - component: {fileID: 613338600}
+  - component: {fileID: 613338601}
   m_Layer: 0
   m_Name: MinigameTrigger
   m_TagString: Untagged
@@ -2263,6 +2268,51 @@ MonoBehaviour:
   useButton: 0
   interactionSound: {fileID: 0}
   targetButtonName: 
+--- !u!61 &613338601
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613338595}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09761047, y: -0.09760809}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.94, y: 0.97}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.54956055, y: 0.47111225}
+  m_EdgeRadius: 0
 --- !u!1 &638733818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,7 +2505,7 @@ PrefabInstance:
       objectReference: {fileID: 1444617245}
     - target: {fileID: 1732775310774378561, guid: 416faaa3135fc9541b60c92eceef02b4, type: 3}
       propertyPath: interactionRadius
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9098164521126997558, guid: 416faaa3135fc9541b60c92eceef02b4, type: 3}
       propertyPath: m_Name
@@ -4047,7 +4097,7 @@ Tilemap:
   - first: {x: 79, y: 18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
+      m_TileIndex: 13
       m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -4178,8 +4228,8 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 5e27c925aeff6f549a40c91c6e85a78c, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 2509d2b1fa9670849bbe4d535d59cc73, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a57d75e2d16805a46a54e21437283a14, type: 2}
   - m_RefCount: 1
@@ -4202,8 +4252,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 1553dad0d56008347b586902e14be463, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 4
     m_Data: {fileID: -1555705539, guid: df5adef9f0abd2247945cc19432fad95, type: 3}
@@ -4232,7 +4282,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -956153266, guid: df5adef9f0abd2247945cc19432fad95, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -410032180, guid: df5adef9f0abd2247945cc19432fad95, type: 3}
+    m_Data: {fileID: 1856165936, guid: 31456f2ceffbeaf439ed799f3b0ffdfe, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 15
     m_Data:
@@ -20972,11 +21022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8633ff12c629dfc4fbdccaf2554fd9e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.673231
+      value: -14.8
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8633ff12c629dfc4fbdccaf2554fd9e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.490454
+      value: 51.2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8633ff12c629dfc4fbdccaf2554fd9e9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21850,6 +21900,7 @@ GameObject:
   - component: {fileID: 2144727600}
   - component: {fileID: 2144727603}
   - component: {fileID: 2144727604}
+  - component: {fileID: 2144727605}
   m_Layer: 0
   m_Name: farmer
   m_TagString: Untagged
@@ -21912,7 +21963,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1839745904, guid: 4294261e02413a84b8a85052c21f9608, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21974,7 +22025,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4.9
+  m_Radius: 7
 --- !u!95 &2144727604
 Animator:
   serializedVersion: 5
@@ -21996,6 +22047,51 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &2144727605
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144727599}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.270324, y: -0.3378849}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.8, y: 4.2}
+    newSize: {x: 9.8, y: 9.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.3672485, y: 2.3078628}
+  m_EdgeRadius: 0
 --- !u!1001 &4841995572878421295
 PrefabInstance:
   m_ObjectHideFlags: 0
