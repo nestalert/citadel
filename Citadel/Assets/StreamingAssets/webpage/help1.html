@@ -23,53 +23,27 @@
       height: calc(100vh - 70px);
     }
     nav {
-      width: 250px;
+      width: 260px;
       background: rgba(51, 51, 51, 0.9);
       padding: 1rem;
       overflow-y: auto;
       border-right: 3px solid #8b6d4c;
     }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav li {
-      margin: 0.5rem 0;
-    }
-    nav a {
-      color: #f4f1e6;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav ul { list-style: none; padding: 0; }
+    nav li { margin: 0.5rem 0; }
+    nav a { color: #f4f1e6; text-decoration: none; font-size: 1.1rem; }
+    nav a:hover { text-decoration: underline; }
     main {
       flex: 1;
       padding: 2rem;
       overflow-y: auto;
       background: rgba(0, 0, 0, 0.5);
     }
-    section {
-      margin-bottom: 2rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px dashed #8b6d4c;
-    }
-    h2 {
-      font-size: 1.4rem;
-      color: #d9c9aa;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      line-height: 1.6;
-    }
-    .screenshot {
-      max-width: 100%;
-      height: auto;
-      border: 2px solid #8b6d4c;
-      margin: 1rem 0;
-      box-shadow: 0 0 10px rgba(0,0,0,0.7);
-    }
+    section { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px dashed #8b6d4c; }
+    h2 { font-size: 1.4rem; color: #d9c9aa; margin-bottom: 0.5rem; }
+    p { line-height: 1.6; }
+    .screenshot { max-width: 100%; height: auto; border: 2px solid #8b6d4c; margin: 1rem 0; box-shadow: 0 0 10px rgba(0,0,0,0.7); }
+    .controls { background: rgba(255,255,255,0.1); padding: 0.5rem; border-radius: 5px; margin-top: 0.5rem; font-style: italic; }
   </style>
 </head>
 <body>
@@ -82,6 +56,8 @@
         <li><a href="#knight">3. Αίθουσα Ιπποτών (Knight Hall)</a></li>
         <li><a href="#shop">4. Κατάστημα Αναμνηστικών (Shop)</a></li>
         <li><a href="#village">5. Χωριό (Village)</a></li>
+        <li><a href="#archery">6. Minigame Τοξοβολίας (Archery Game)</a></li>
+        <li><a href="#pighunt">7. Minigame Συλλογής Γουρουνιών (Pig Hunt)</a></li>
       </ul>
     </nav>
     <main>
@@ -98,7 +74,7 @@
       <section id="knight">
         <h2>Αίθουσα Ιπποτών (Knight Hall)</h2>
         <img src="images1/KnightHall.png" alt="Knight Hall Screenshot" class="screenshot">
-        <p>Στην αίθουσα των ιπποτών, η δραστηριότητα περιλαμβάνει δοκιμή εξοπλισμού και παρουσίαση πανοπλίας σε 3D παρουσίαση με ήχο, καθώς και πληροφορίες για τον εξοπλισμό του μεσαιωνικού πολεμιστή.</p>
+        <p>Στην αίθουσα των ιπποτών, η δραστηριότητα περιλαμβάνει δοκιμή εξοπλισμού και 3D παρουσίαση πανοπλίας με ήχο, καθώς και κουίζ για τον εξοπλισμό του μεσαιωνικού πολεμιστή.</p>
       </section>
       <section id="shop">
         <h2>Κατάστημα Αναμνηστικών (Shop)</h2>
@@ -109,6 +85,18 @@
         <h2>Χωριό (Village)</h2>
         <img src="images1/Village.png" alt="Village Screenshot" class="screenshot">
         <p>Το χωριό υποστηρίζει περιήγηση σε σπίτια τεχνιτών και αγρότες, με επιλογή βοτανικών δραστηριοτήτων και αφήγηση από τον μάγειρα για τα βότανα.</p>
+      </section>
+      <section id="archery">
+        <h2>Minigame Τοξοβολίας (Archery Game)</h2>
+        <img src="images1/Archery1.png" alt="Archery Minigame Screenshot" class="screenshot"><img src="images1/Archery.png" alt="Archery Minigame Screenshot" class="screenshot">
+        <p>Στο παιχνίδι τοξοβολίας πηγαίνουμε στον τοξοβόλο και για να ζητήσουμε το τόξο του και να αρχίσουμε το παιχνίδι πατάμε το <strong>Z</strong>, με την αρχή του minigame το τόξο κινείται αυτόματα δεξιά και αριστερά με σταθερό ρυθμό. Ο χρήστης πατάει το <strong>Z</strong> για να ρίξει βέλος και το <strong>X</strong> για να τερματίσει το minigame. Σκοπός του παιχνιδιού να πετύχουμε τον στόχο.</p>
+        <div class="controls">Κίνηση τόξου: αυτόματη<br>Βολή βέλους: "Z"<br>Τερματισμός παιχνιδιού: "X"</div>
+      </section>
+      <section id="pighunt">
+        <h2>Minigame Συλλογής Γουρουνιών (Pig Hunt)</h2>
+        <img src="images1/PigHunt.png" alt="Pig Hunt Minigame Screenshot" class="screenshot">
+        <p>Στο παιχνίδι συλλογής γουρουνιών, ο χρήστης πρέπει να βρει 6 γουρούνια διάσπαρτα στις αυλές και στο κάστρο. Για συλλογή, αρκεί να πλησιάσει το γουρούνι και να πατήσει <strong>Z</strong>. Στη συνέχεια οδηγεί τα γουρούνια στον χωριάτη στο χωριό για να ολοκληρώσει την αποστολή.</p>
+        <div class="controls">Επαναφορά αποστολής: επίτευξη 6 γουρουνιών<br>Συλλογή: "Z" κοντά σε γουρούνι</div>
       </section>
     </main>
   </div>
