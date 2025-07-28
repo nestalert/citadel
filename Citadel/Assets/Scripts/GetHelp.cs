@@ -9,7 +9,7 @@ public class GetHelp : MonoBehaviour
     }
     public void OpenWebsite()
     {
-        string filePath = Application.streamingAssetsPath + "/webpage/RetroStuff.htm";
+        string filePath = Application.streamingAssetsPath + "/webpage/help1.html";
         string url = "";
 
         url = "file:///" + filePath;

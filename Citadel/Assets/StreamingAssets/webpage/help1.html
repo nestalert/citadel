@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Βοήθεια Εφαρμογής - Castle & Gardens Weikersheim</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/stone-wall.jpg') repeat;
+      color: #f4f1e6;
+    }
+    header {
+      background: rgba(34, 34, 34, 0.8);
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      border-bottom: 3px solid #8b6d4c;
+    }
+    #container {
+      display: flex;
+      height: calc(100vh - 70px);
+    }
+    nav {
+      width: 250px;
+      background: rgba(51, 51, 51, 0.9);
+      padding: 1rem;
+      overflow-y: auto;
+      border-right: 3px solid #8b6d4c;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      margin: 0.5rem 0;
+    }
+    nav a {
+      color: #f4f1e6;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    section {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed #8b6d4c;
+    }
+    h2 {
+      font-size: 1.4rem;
+      color: #d9c9aa;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .screenshot {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #8b6d4c;
+      margin: 1rem 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+  <header>Βοήθεια Εφαρμογής - Εικονική Καστροπολιτεία Weikersheim</header>
+  <div id="container">
+    <nav>
+      <ul>
+        <li><a href="#courtyard">1. Αύλειος Χώρος (Courtyard)</a></li>
+        <li><a href="#dwarf">2. Είσοδος Νάνων (Dwarf Entrance)</a></li>
+        <li><a href="#knight">3. Αίθουσα Ιπποτών (Knight Hall)</a></li>
+        <li><a href="#shop">4. Κατάστημα Αναμνηστικών (Shop)</a></li>
+        <li><a href="#village">5. Χωριό (Village)</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="courtyard">
+        <h2>Αύλειος Χώρος (Courtyard)</h2>
+        <img src="images1/Courtyard.png" alt="Courtyard Screenshot" class="screenshot">
+        <p>Στην κεντρική αυλή, ο χρήστης μπορεί να περιηγηθεί ελεύθερα, να αλληλεπιδράσει με κιόσκια πληροφοριών και να επιλέξει σημεία ενδιαφέροντος για να μάθει την ιστορία του κάστρου.</p>
+      </section>
+      <section id="dwarf">
+        <h2>Είσοδος Νάνων (Dwarf Entrance)</h2>
+        <img src="images1/DwarfEntrance.png" alt="Dwarf Entrance Screenshot" class="screenshot">
+        <p>Η είσοδος των Νάνων προσφέρει ένα θέμα μυθολογίας με διαδραστικά στοιχεία: οι χρήστες μπορούν να δοκιμάσουν εργαλεία και να διαβάσουν πυκνές επιγραφές για τη λατομία του κάστρου.</p>
+      </section>
+      <section id="knight">
+        <h2>Αίθουσα Ιπποτών (Knight Hall)</h2>
+        <img src="images1/KnightHall.png" alt="Knight Hall Screenshot" class="screenshot">
+        <p>Στην αίθουσα των ιπποτών, η δραστηριότητα περιλαμβάνει δοκιμή εξοπλισμού και παρουσίαση πανοπλίας σε 3D παρουσίαση με ήχο, καθώς και κουίζ για τον εξοπλισμό του μεσαιωνικού πολεμιστή.</p>
+      </section>
+      <section id="shop">
+        <h2>Κατάστημα Αναμνηστικών (Shop)</h2>
+        <img src="images1/Shop.png" alt="Shop Screenshot" class="screenshot">
+        <p>Στο ηλεκτρονικό κατάστημα, ο χρήστης μπορεί να επιλέξει αντικείμενα, να δει λεπτομέρειες με ζoom-in, και να ολοκληρώσει αγορές με εικονική πιστωτική κάρτα. Υποστηρίζονται πολλαπλά νομίσματα.</p>
+      </section>
+      <section id="village">
+        <h2>Χωριό (Village)</h2>
+        <img src="images1/Village.png" alt="Village Screenshot" class="screenshot">
+        <p>Το χωριό υποστηρίζει περιήγηση σε σπίτια τεχνιτών και αγρότες, με επιλογή βοτανικών δραστηριοτήτων και αφήγηση από τον μάγειρα για τα βότανα.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
