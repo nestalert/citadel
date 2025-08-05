@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Target : MonoBehaviour
 {
@@ -10,7 +11,11 @@ public class Target : MonoBehaviour
     [Header("Visual Feedback")]
     public Color hitColor = Color.red;
     public float flashDuration = 0.2f;
-    
+
+    [Header("Shake Feedback")]
+    public float shakeDuration = 0.1f;
+    public float shakeMagnitude = 0.05f;
+
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     private AudioSource audioSource;
@@ -36,10 +41,14 @@ public class Target : MonoBehaviour
     public void OnHit()
     {
         CurrencyManager.Instance.AddMoney(1);
-        
+
+        totalScore += pointValue;
+
         // Visual feedback
         StartCoroutine(FlashTarget());
-        
+        StartCoroutine(Shake(shakeDuration, shakeMagnitude));
+
+
         // Sound effect
         if (audioSource != null && hitSound != null)
         {
@@ -82,5 +91,25 @@ public class Target : MonoBehaviour
     public static void ResetScore()
     {
         totalScore = 0;
+    }
+
+    private IEnumerator Shake(float duration, float magnitude)
+    {
+        Vector3 originalPos = transform.localPosition;
+
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+
+            transform.localPosition = originalPos + new Vector3(x, y, 0);
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.localPosition = originalPos;
     }
 }

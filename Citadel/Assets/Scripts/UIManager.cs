@@ -108,4 +108,12 @@ public class UIManager : MonoBehaviour
             infoText.text = text;
         }
     }
+
+    // Public method to "purchase" an item and show its UI element
+    public void PurchaseItem(string itemName)
+    {
+        ActivateButton(itemName);
+        Debug.Log("Purchased: " + itemName);
+    }
+
 }

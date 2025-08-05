@@ -1,18 +1,22 @@
 using UnityEngine;
+using TMPro;
 
 public class CurrencyManager : MonoBehaviour
 {
     public static CurrencyManager Instance { get; private set; }
 
-    [SerializeField] private int _playerMoney = 0; 
+    [SerializeField] private int _playerMoney = 0;
+
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI moneyText;
 
     public int PlayerMoney
     {
         get { return _playerMoney; }
-        private set // Private set to control how money is changed
+        private set
         {
             _playerMoney = value;
-            // You can add events here to update UI whenever money changes
+            UpdateMoneyUI();
             Debug.Log("Player money updated to: " + _playerMoney);
         }
     }
@@ -57,6 +61,14 @@ public class CurrencyManager : MonoBehaviour
         {
             Debug.Log("Not enough money to remove " + amount + ". Current money: " + PlayerMoney);
             return false;
+        }
+    }
+
+    private void UpdateMoneyUI()
+    {
+        if (moneyText != null)
+        {
+            moneyText.text = "" + _playerMoney;
         }
     }
 }
