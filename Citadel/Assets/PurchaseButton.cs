@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class PurchaseButton : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class PurchaseButton : MonoBehaviour
     public GameObject notEnoughMoneyPopup;
 
     private Button button;
+
+    // Keep track of purchased items globally
+    private static HashSet<string> purchasedItems = new HashSet<string>();
 
     void Awake()
     {
@@ -22,10 +26,22 @@ public class PurchaseButton : MonoBehaviour
         {
             notEnoughMoneyPopup.SetActive(false);
         }
+
+        // Disable button if item is already purchased
+        if (purchasedItems.Contains(itemNameToPurchase))
+        {
+            DisableButton();
+        }
     }
 
     void OnPurchaseClicked()
     {
+        if (purchasedItems.Contains(itemNameToPurchase))
+        {
+            Debug.Log("Item already purchased: " + itemNameToPurchase);
+            return; // prevent repurchase
+        }
+
         if (CurrencyManager.Instance == null)
         {
             Debug.LogWarning("CurrencyManager.Instance is null.");
@@ -34,6 +50,9 @@ public class PurchaseButton : MonoBehaviour
 
         if (CurrencyManager.Instance.RemoveMoney(itemPrice))
         {
+            purchasedItems.Add(itemNameToPurchase);
+            DisableButton();
+
             if (UIManager.Instance != null)
             {
                 UIManager.Instance.PurchaseItem(itemNameToPurchase);
@@ -51,6 +70,14 @@ public class PurchaseButton : MonoBehaviour
                 notEnoughMoneyPopup.SetActive(true);
                 Invoke(nameof(HidePopup), 2f);
             }
+        }
+    }
+
+    void DisableButton()
+    {
+        if (button != null)
+        {
+            button.interactable = false;
         }
     }
 
