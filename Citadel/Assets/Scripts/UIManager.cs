@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            // DontDestroyOnLoad(gameObject); // Assuming this is already done by another script on the Canvas
+            DontDestroyOnLoad(gameObject); // Assuming this is already done by another script on the Canvas
         }
         else
         {
