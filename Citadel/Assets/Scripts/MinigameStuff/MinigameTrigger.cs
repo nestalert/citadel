@@ -10,10 +10,10 @@ public class MiniGameTrigger : MonoBehaviour
     
     [Header("Camera Settings")]
     public Camera miniGameCamera; // Camera for the mini-game
-    public Camera mainCamera; // Main game camera (will be auto-found if null)
+    public Camera mainCamera = null;
     
     [Header("References")]
-    public Transform player;
+    public Transform player = null;
     
     private Vector3 originalPlayerPosition;
     private bool playerInRange = false;
@@ -22,53 +22,62 @@ public class MiniGameTrigger : MonoBehaviour
     private GameObject currentTarget;
     private BowController bowController;
     
-    void Start()
+void Start()
+{
+    // Auto-find main camera if not assigned
+    if (mainCamera == null)
     {
-        // Auto-find main camera if not assigned
-        if (mainCamera == null)
+        // Check for the singleton instance of the persistent camera
+        if (PersistentCamera.Instance != null)
         {
+            mainCamera = PersistentCamera.Instance.GetComponent<Camera>();
+        }
+        else
+        {
+            // Fallback for cases where the persistent camera isn't set up as a singleton
             mainCamera = Camera.main;
             if (mainCamera == null)
             {
                 mainCamera = FindObjectOfType<Camera>();
             }
         }
-        
-        // Ensure mini-game camera starts disabled
-        if (miniGameCamera != null)
-        {
-            miniGameCamera.gameObject.SetActive(false);
-        }
     }
     
-    void Update()
+    // Ensure mini-game camera starts disabled
+    if (miniGameCamera != null)
     {
-        // Check if player is in range
-        if (player != null)
+        miniGameCamera.gameObject.SetActive(false);
+    }
+}
+    
+void Update()
+{
+    player = PersistentPlayer.Instance.transform;
+    if (player != null)
+    {
+        float distance = Vector2.Distance(transform.position, player.position);
+        playerInRange = distance <= interactionRadius;
+    }
+    
+    // Handle input
+    if (Input.GetKeyDown(KeyCode.Z))
+    {
+        if (!miniGameActive && playerInRange)
         {
-            float distance = Vector2.Distance(transform.position, player.position);
-            playerInRange = distance <= interactionRadius;
+            StartMiniGame();
         }
-        
-        // Handle input
-        if (Input.GetKeyDown(KeyCode.Z))
+        else if (miniGameActive && bowController != null)
         {
-            if (!miniGameActive && playerInRange)
-            {
-                StartMiniGame();
-            }
-            else if (miniGameActive && bowController != null)
-            {
-                bowController.FireArrow();
-            }
-        }
-        
-        if (Input.GetKeyDown(KeyCode.X) && miniGameActive)
-        {
-            EndMiniGame();
+            bowController.FireArrow();
         }
     }
     
+    if (Input.GetKeyDown(KeyCode.X) && miniGameActive)
+    {
+        EndMiniGame();
+    }
+}
+
     void StartMiniGame()
     {
         // Store original position

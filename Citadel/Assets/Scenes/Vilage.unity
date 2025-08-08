@@ -2770,7 +2770,7 @@ MonoBehaviour:
   targetPrefab: {fileID: 7261961990302719130, guid: 7b51ca6ed9a524b45888bfcca7210a1f, type: 3}
   interactionRadius: 2
   miniGameCamera: {fileID: 1038825100}
-  mainCamera: {fileID: 1507297656}
+  mainCamera: {fileID: 0}
   player: {fileID: 2054801702}
 --- !u!4 &613338598
 Transform:
