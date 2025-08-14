@@ -9820,6 +9820,7 @@ GameObject:
   - component: {fileID: 742037404}
   - component: {fileID: 742037403}
   - component: {fileID: 742037402}
+  - component: {fileID: 742037405}
   m_Layer: 6
   m_Name: card button
   m_TagString: Untagged
@@ -9941,6 +9942,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742037400}
   m_CullTransparentMesh: 1
+--- !u!114 &742037405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742037400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a781480f090626544ba57cabdd0548fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameToPurchase: Map
+  itemPrice: 0
+  notEnoughMoneyPopup: {fileID: 1089553206}
 --- !u!1 &758771842
 GameObject:
   m_ObjectHideFlags: 0
@@ -11885,6 +11901,7 @@ GameObject:
   - component: {fileID: 891852511}
   - component: {fileID: 891852510}
   - component: {fileID: 891852509}
+  - component: {fileID: 891852512}
   m_Layer: 6
   m_Name: card button
   m_TagString: Untagged
@@ -12006,6 +12023,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891852507}
   m_CullTransparentMesh: 1
+--- !u!114 &891852512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891852507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a781480f090626544ba57cabdd0548fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameToPurchase: Armor
+  itemPrice: 0
+  notEnoughMoneyPopup: {fileID: 1089553206}
 --- !u!1 &927043052
 GameObject:
   m_ObjectHideFlags: 0
@@ -16053,6 +16085,7 @@ GameObject:
   - component: {fileID: 973837801}
   - component: {fileID: 973837800}
   - component: {fileID: 973837799}
+  - component: {fileID: 973837802}
   m_Layer: 6
   m_Name: card button
   m_TagString: Untagged
@@ -16174,6 +16207,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973837797}
   m_CullTransparentMesh: 1
+--- !u!114 &973837802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973837797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a781480f090626544ba57cabdd0548fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameToPurchase: "\u0391\u03C3\u03C0\u03AF\u03B4\u03B1"
+  itemPrice: 0
+  notEnoughMoneyPopup: {fileID: 1089553206}
 --- !u!1 &975101053
 GameObject:
   m_ObjectHideFlags: 0
@@ -18583,6 +18631,7 @@ GameObject:
   - component: {fileID: 1166779478}
   - component: {fileID: 1166779477}
   - component: {fileID: 1166779476}
+  - component: {fileID: 1166779479}
   m_Layer: 6
   m_Name: card button
   m_TagString: Untagged
@@ -18704,6 +18753,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166779474}
   m_CullTransparentMesh: 1
+--- !u!114 &1166779479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166779474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a781480f090626544ba57cabdd0548fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameToPurchase: Book
+  itemPrice: 0
+  notEnoughMoneyPopup: {fileID: 1089553206}
 --- !u!1001 &1186800001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19415,6 +19479,7 @@ GameObject:
   - component: {fileID: 1264865845}
   - component: {fileID: 1264865844}
   - component: {fileID: 1264865843}
+  - component: {fileID: 1264865846}
   m_Layer: 6
   m_Name: card button
   m_TagString: Untagged
@@ -19536,6 +19601,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264865841}
   m_CullTransparentMesh: 1
+--- !u!114 &1264865846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264865841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a781480f090626544ba57cabdd0548fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameToPurchase: "\u039C\u03B1\u03C7\u03B1\u03AF\u03C1\u03B9"
+  itemPrice: 0
+  notEnoughMoneyPopup: {fileID: 1089553206}
 --- !u!1 &1285596884
 GameObject:
   m_ObjectHideFlags: 0
