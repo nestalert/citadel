@@ -618,6 +618,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1624922315}
     - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cb006ae1ee88c124daa028eaa34de3df, type: 3}
+    - target: {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
       propertyPath: targetButtonName
       value: "\u03A3\u03C0\u03AF\u03C4\u03B9"
       objectReference: {fileID: 0}
