@@ -9,6 +9,8 @@ public class PurchaseButton : MonoBehaviour
 
     public GameObject notEnoughMoneyPopup;
 
+    public Button buttonToDisable;
+
     private Button button;
 
     // Keep track of purchased items globally
@@ -52,6 +54,10 @@ public class PurchaseButton : MonoBehaviour
         {
             purchasedItems.Add(itemNameToPurchase);
             DisableButton();
+            if (buttonToDisable != null)
+            {
+                buttonToDisable.interactable = false;
+            }
 
             if (UIManager.Instance != null)
             {

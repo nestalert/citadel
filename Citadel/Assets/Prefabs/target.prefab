@@ -145,6 +145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointValue: 1
   hitEffect: {fileID: 0}
-  hitSound: {fileID: 0}
+  hitSound: {fileID: 8300000, guid: 392489112898ec848b1fae80ddb141fd, type: 3}
   hitColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.2
+  shakeDuration: 0.1
+  shakeMagnitude: 0.05

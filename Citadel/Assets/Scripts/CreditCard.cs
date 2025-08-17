@@ -5,10 +5,11 @@ using System.Text.RegularExpressions;
 
 public class CreditCardValidator : MonoBehaviour
 {
-    public TMP_InputField cardNumberField;   // 16 digits, formatted
-    public TMP_InputField expiryField;       // MM/YY
-    public TMP_InputField nameField;         // Letters + spaces
-    public TMP_InputField cvcField;          // 3 digits
+    public TMP_InputField cardNumberField;   //16 digits, formatted
+    public TMP_InputField expiryField;       //MM/YY
+    public TMP_InputField nameField;         //Letters + spaces
+    public TMP_InputField cvcField;          //3 digits
+    public Button purchaseButton;            //Purchase button (with PurchaseButton script attached)
     public Button buttonToDisable;
     public Button buttonToDisable2;
 
@@ -20,10 +21,9 @@ public class CreditCardValidator : MonoBehaviour
         expiryField.onValueChanged.AddListener(FormatExpiryInput);
         cardNumberField.onValueChanged.AddListener(FormatCardNumberInput);
         cvcField.onValueChanged.AddListener(LimitCVCInput);
-
     }
 
-    // --- Auto-format expiry MM/YY ---
+    //Auto-format expiry MM/YY
     private void FormatExpiryInput(string value)
     {
         string digitsOnly = Regex.Replace(value, @"\D", "");
@@ -31,7 +31,7 @@ public class CreditCardValidator : MonoBehaviour
         if (digitsOnly.Length > 4)
             digitsOnly = digitsOnly.Substring(0, 4);
 
-        // Validate first digit for month
+        //Validate first digit for month
         if (digitsOnly.Length >= 1)
         {
             int firstDigit = int.Parse(digitsOnly[0].ToString());
@@ -41,7 +41,7 @@ public class CreditCardValidator : MonoBehaviour
             }
         }
 
-        // Validate full month when two digits are typed
+        //Validate full month when two digits are typed
         if (digitsOnly.Length >= 2)
         {
             int month = int.Parse(digitsOnly.Substring(0, 2));
@@ -51,7 +51,7 @@ public class CreditCardValidator : MonoBehaviour
             }
         }
 
-        // Insert slash
+        //Insert slash
         if (digitsOnly.Length >= 3)
         {
             expiryField.text = digitsOnly.Substring(0, 2) + "/" + digitsOnly.Substring(2);
@@ -64,7 +64,7 @@ public class CreditCardValidator : MonoBehaviour
         expiryField.caretPosition = expiryField.text.Length;
     }
 
-    // --- Auto-format card number #### #### #### #### ---
+    //Auto-format card number #### #### #### #### ---
     private void FormatCardNumberInput(string value)
     {
         string digitsOnly = Regex.Replace(value, @"\D", "");
@@ -72,7 +72,7 @@ public class CreditCardValidator : MonoBehaviour
         if (digitsOnly.Length > 16)
             digitsOnly = digitsOnly.Substring(0, 16);
 
-        // Group into 4 digits
+        //Group into 4 digits
         string spaced = "";
         for (int i = 0; i < digitsOnly.Length; i++)
         {
@@ -99,6 +99,15 @@ public class CreditCardValidator : MonoBehaviour
 
         if (validCard && validExpiry && validName && validCVC)
         {
+            Debug.Log(" All credit card inputs are valid! Processing purchase...");
+
+            //Run the purchase button logic
+            if (purchaseButton != null)
+            {
+                purchaseButton.onClick.Invoke();
+            }
+
+            //Disable buttons after successful validation
             if (buttonToDisable != null)
             {
                 buttonToDisable.interactable = false;
@@ -107,11 +116,14 @@ public class CreditCardValidator : MonoBehaviour
             {
                 buttonToDisable2.interactable = false;
             }
-            Debug.Log("All credit card inputs are valid!");
+            if (purchaseButton != null)
+            {
+                purchaseButton.interactable = false;
+            }
         }
         else
         {
-            Debug.Log("One or more credit card inputs are invalid!");
+            Debug.Log(" One or more credit card inputs are invalid!");
         }
     }
 
@@ -149,5 +161,4 @@ public class CreditCardValidator : MonoBehaviour
         cvcField.text = digitsOnly;
         cvcField.caretPosition = cvcField.text.Length;
     }
-
 }
