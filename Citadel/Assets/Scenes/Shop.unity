@@ -2028,7 +2028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemNameToPurchase: "\u039C\u03B1\u03C7\u03B1\u03AF\u03C1\u03B9"
-  itemPrice: 5
+  itemPrice: 0
   notEnoughMoneyPopup: {fileID: 1089553206}
   buttonToDisable: {fileID: 0}
 --- !u!114 &159270891
@@ -4760,6 +4760,7 @@ MonoBehaviour:
   panelToToggle: {fileID: 1349535981}
   activationRadius: 1
   keyToPress: z
+  persistentRb: {fileID: 0}
 --- !u!1 &283858357
 GameObject:
   m_ObjectHideFlags: 0
@@ -5368,7 +5369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemNameToPurchase: "\u0391\u03C3\u03C0\u03AF\u03B4\u03B1"
-  itemPrice: 10
+  itemPrice: 0
   notEnoughMoneyPopup: {fileID: 1089553206}
   buttonToDisable: {fileID: 0}
 --- !u!114 &310256404
@@ -8688,6 +8689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2077034641269188809, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
+    - {fileID: 2554392018463888311, guid: 1d8b2376a94e087409c0d11537833ad2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -11474,7 +11476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemNameToPurchase: Armor
-  itemPrice: 50
+  itemPrice: 0
   notEnoughMoneyPopup: {fileID: 1089553206}
   buttonToDisable: {fileID: 0}
 --- !u!114 &827327615
@@ -12028,7 +12030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemNameToPurchase: Map
-  itemPrice: 5
+  itemPrice: 0
   notEnoughMoneyPopup: {fileID: 1089553206}
   buttonToDisable: {fileID: 0}
 --- !u!114 &874470014
@@ -24331,7 +24333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemNameToPurchase: Book
-  itemPrice: 15
+  itemPrice: 0
   notEnoughMoneyPopup: {fileID: 1089553206}
   buttonToDisable: {fileID: 0}
 --- !u!114 &1659269043

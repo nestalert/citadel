@@ -77,6 +77,7 @@ public class InteractableObject : MonoBehaviour
             // Player is out of range, hide the canvas and stop the audio
             if (targetCanvas.gameObject.activeSelf) // Only deactivate if currently active
             {
+                GameManager.Instance.isInteractiveCanvasActive = false;
                 targetCanvas.gameObject.SetActive(false);
                 if (audioSource != null && audioSource.isPlaying)
                 {
@@ -95,6 +96,15 @@ public class InteractableObject : MonoBehaviour
 
         bool isCanvasActive = targetCanvas.gameObject.activeSelf;
         targetCanvas.gameObject.SetActive(!isCanvasActive); // Toggle canvas visibility
+
+    if (targetCanvas.gameObject.activeSelf)
+        {
+            GameManager.Instance.isInteractiveCanvasActive = true;
+        }
+        else
+        {
+            GameManager.Instance.isInteractiveCanvasActive = false;
+        }
 
         // Play or stop the audio based on canvas state
         if (interactionSound != null)
